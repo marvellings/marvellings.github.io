@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Iframe testing</title>
+    <script type="text/javascript" src="geo.js"></script>  
+  </head>
+  <body>
+    
+    <h1>Iframe testing</h1>
+      
+    <div id="getPos">
+      <h2>getCurrentPosition</h2>
+      <button>Get</button>
+      <p>Page: <span class="getPage"></span><br />
+      Frame: <span class="getFrame"></span></p>
+      </div>
+    
+    <hr />
+    
+    <div id="watchPos">
+      <h2>watchPosition</h2>
+      <button id="watch">Watch</button>
+      <button id="clear">Clear</button>
+      <p>Page: <span class="watchPage"></span><br />
+      Frame: <span class="watchFrame"></span></p>
+      </div> 
+    
+    <hr>
+    
+    
+    
+    <h2>Frame</h2>
+    <p>This is an iframe that loads about:blank.</p>
+    <iframe src="about:blank" id="frame" title="blank" height="10" width="30"></iframe>
+    
+  </body>
+</html>
