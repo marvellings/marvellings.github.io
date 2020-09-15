@@ -108,8 +108,8 @@ const onWatchLocation = (e) => {
 
             navigator.geolocation.clearWatch(pageWatchId);
             frame.contentWindow.navigator.geolocation.clearWatch(frameWatchId);
-            console.log('Page watch cleared');
-            console.log('Frame watch cleared');
+            console.log('Page watch ID ' + pageWatchId + ' cleared');
+            console.log('Frame watch ID ' + frameWatchId + ' cleared');
             showWatchPage.innerHTML = 'Page watch cleared.';
             showWatchFrame.innerHTML = 'Frame watch cleared.';
             clearButton.style['display'] = 'none';
