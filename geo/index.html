@@ -21,6 +21,8 @@
       <button id="clear">Clear</button>
       <p>Page: <span class="watchPage"></span><br />
       Frame: <span class="watchFrame"></span></p>
+      <p>Page watch ID: <span class="pageWatchId"></span><br />
+      Frame watch ID: <span class="frameWatchId"></span></p>
       </div> 
     
     <hr>
@@ -39,6 +41,8 @@ const showGetPage = document.querySelector('#getPos .getPage');
 const showGetFrame = document.querySelector('#getPos .getFrame');
 const showWatchPage = document.querySelector('#watchPos .watchPage');
 const showWatchFrame = document.querySelector('#watchPos .watchFrame');
+const showPageId = document.querySelector('#watchPos .pageWatchId');
+const showFrameId = document.querySelector('#watchPos .frameWatchId');
 const frame = document.getElementById("frame");
 let pageWatchId;
 let frameWatchId;
@@ -99,6 +103,8 @@ const onWatchLocation = (e) => {
 
     clearButton.style['display'] = 'block';
     watchButton.style['display'] = 'none';
+    showPageId.innerHTML = pageWatchId;
+    showFrameId.innerHTML = frameWatchId;
 }
 
 
@@ -114,6 +120,8 @@ const onWatchLocation = (e) => {
             showWatchFrame.innerHTML = 'Frame watch cleared.';
             clearButton.style['display'] = 'none';
             watchButton.style['display'] = 'block'; 
+            showPageId.innerHTML = '';
+            showFrameId.innerHTML = '';
         }
       
        
