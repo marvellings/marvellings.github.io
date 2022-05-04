@@ -22,8 +22,7 @@ function keepChecking(oldValue) {
   if(oldValue) {
     setInterval(() => {
      if(obj.language !== oldValue) {
-      console.log()
-       console.log("poll: " + obj.language);
+      console.log("poll: " + obj.language);
       oldValue = obj.language;
       show_lang.innerHTML = navigator.language;
       show_langs.innerHTML = navigator.languages;
